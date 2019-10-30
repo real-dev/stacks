@@ -15,9 +15,9 @@ This is similar to Docker stack. All you need is a `docker-compose.yml`.
 - `service` (string, required): The name of entrypoint service in your docker-compose.yml
   - Only its dependent services will be started
 - `networkService` (string, required): This is a bit tricky. Due to a limitation of our platform, 
-  a special service must exist in your docker-compose.yml. This option is set to the name of that service.
+  a special service must exist in your `docker-compose.yml`. This option is set to the name of that service.
   - This service provides a shared network interface for all other services. 
-    Make sure ALL YOUR SERVICES HAS network_mode: service:network-service set. Otherwise it will not work.
+    Make sure ALL YOUR SERVICES HAS `network_mode: service:network-service` set. Otherwise it will not work.
   - Under this assumption, all your services will share the same localhost, so no service name mapping is needed. 
     If you're familiar with Kubernetes, this is similar to how network is shared among containers in the same pod.
   - We'll work on lifting this limitation, so stay tuned!

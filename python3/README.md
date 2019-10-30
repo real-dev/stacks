@@ -2,17 +2,6 @@
 
 With this stack, `python` is used to run the program.
 It expects a `main` options to understand which file to run.
-Example:
-
-```json
-{
-  "task": "host-my-stuff",
-  "stack": {
-    "type": "python3",
-    "main": "upload.py"
-  }
-}
-```
 
 ## Features
 
@@ -25,3 +14,15 @@ Example:
   It does accepts some special values.
   - `django`: Assume it's a django project and look for a `manage.py` under the project root.
 - `version` (string, optional): The version of the Python 3. Default to the `latest` release
+
+## Example
+
+```json
+{
+  "task": "host-my-stuff",
+  "stack": {
+    "type": "python3",
+    "main": "upload.py"
+  }
+}
+```
