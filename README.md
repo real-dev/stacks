@@ -3,7 +3,7 @@
 A stack is a term used to describe what "tech stack" is used in
 Real Dev's task submission, for example, in `real.json`:
 
-```json
+```jsonc
 {
   "task": "hello-real-world",
   // Use NodeJS stack to run my code
